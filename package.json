@@ -6,7 +6,9 @@
   "scripts": {
     "build": "tsc",
     "driver-start": "webdriver-manager start",
-    "driver-update": "webdriver-manager update"
+    "driver-update": "webdriver-manager update",
+    "protractor": "protractor js/config/config.js",
+    "test": "npm run build && npm run protractor"
   },
   "repository": {
     "type": "git",

@@ -1,4 +1,4 @@
-import { browser, Config } from "protractor";
+import { Config } from "protractor";
 
 export const config: Config = {
   seleniumAddress: "http://127.0.0.1:4444/wd/hub",

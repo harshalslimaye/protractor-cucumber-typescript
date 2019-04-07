@@ -1,5 +1,6 @@
 Feature: Testing Calculator
 
+    @Calculator
     Scenario: Testing Addition
         Given go to "https://juliemr.github.io/protractor-demo/"
         When first number is "1"

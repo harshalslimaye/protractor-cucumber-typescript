@@ -4,7 +4,9 @@
   "description": "e2e boilerplate which consists of Protractor, CucumberJS and TypeScript",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "tsc",
+    "driver-start": "webdriver-manager start",
+    "driver-update": "webdriver-manager update"
   },
   "repository": {
     "type": "git",

@@ -6,6 +6,11 @@
 
 **This project is a barebones implementation of Protractor with Cucumber framework using TypeScript.**
 
+## Prerequisistes
+1. [NodeJS](https://nodejs.org/en/download/)
+2. Web Browser - Chrome/Firefox
+3. Code Editor - Visual Studio Code/Atom/Sublime
+
 ## Setup
 1. Open your terminal / command prompt
 2. Clone the repository to your computer

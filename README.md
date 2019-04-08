@@ -31,3 +31,7 @@ And finally run following command to start the test
 ```
 npm test
 ```
+# Reports
+This project uses [Cucumber HTML Reporter](https://github.com/gkushang/cucumber-html-reporter) package to generate reports. It generates a two files report.json and report.html at the root of this repository each time ```npm test``` command is fired.
+
+You can change the report file names and there locations by simply updating configuration object passed to ***reporter.generate*** method inside config.ts file located inside config folder.

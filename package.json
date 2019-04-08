@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "build": "tsc",
+    "driver": "npm run driver-update && npm run driver-start",
     "driver-start": "webdriver-manager start",
     "driver-update": "webdriver-manager update",
     "protractor": "protractor js/config/config.js",

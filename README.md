@@ -1,3 +1,7 @@
+<div style="text-align:center">
+    <img src="https://raw.githubusercontent.com/harshal-limaye/protractor-cucumber-typescript/master/images/protractor.png">
+</div>
+
 # Protractor Cucumber TypeScript
 
 **This project is a barebones implementation of Protractor with Cucumber framework using TypeScript.**

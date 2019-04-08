@@ -1,5 +1,5 @@
 <div style="text-align:center">
-    <img src="https://raw.githubusercontent.com/harshal-limaye/protractor-cucumber-typescript/master/images/protractor.png">
+    <img alt="Protractor" src="https://raw.githubusercontent.com/harshal-limaye/protractor-cucumber-typescript/master/images/protractor.png">
 </div>
 
 # Protractor Cucumber TypeScript

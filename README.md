@@ -36,6 +36,64 @@ And finally run following command to start the test
 ```
 npm test
 ```
+
+## Folders
+1. **features** - used to store .feature files.
+```
+Feature: Testing Calculator
+
+    @Calculator
+    Scenario Outline: Testing All Functions
+        Given go to "https://juliemr.github.io/protractor-demo/"
+        When first number is "<n1>"
+        When second number is "<n2>"
+        When operation to be performed is "<op>"
+        When operation in progress
+        Then output should be "<ot>"
+
+    Examples:
+    | n1 | n2 | op | ot |
+    | 2  | 4  | +  | 6  |
+    | 8  | 3  | -  | 5  |
+    | 2  | 5  | *  | 10 |
+    | 25 | 5  | /  | 5  |
+    | 10 | 3  | %  | 1  |
+```
+
+2. **stepdefinitions** -  contains step definition files in typescript format.
+```
+import { Given } from 'cucumber';
+import { browser } from 'protractor';
+
+Given('go to {string}', async (url) => {
+    await browser.get(url);
+})
+```
+3. **pages** - used to store page objects
+```
+import { by, element, ElementFinder } from "protractor";
+
+export class CalcPage {
+  firstNumber: ElementFinder;
+  secondNumber: ElementFinder;
+  operator: ElementFinder;
+  button: ElementFinder;
+  results: any;
+
+  constructor() {
+    this.firstNumber = this.getElByModel("first");
+    this.secondNumber = this.getElByModel("second");
+    this.operator = this.getElByModel("operator");
+    this.button = element(by.id("gobutton"));
+    this.results = element(by.repeater("result in memory")).element(by.css("td:nth-child(3)"))
+  }
+
+  getElByModel(modelName) {
+    return element(by.model(modelName));
+  }
+}
+```
+
 ## Reports
 This project uses [Cucumber HTML Reporter](https://github.com/gkushang/cucumber-html-reporter) package to generate reports. It generates a two files report.json and report.html at the root of this repository each time ```npm test``` command is fired.
 
